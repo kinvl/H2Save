@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20186E072710677A005DB0B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20186E062710677A005DB0B1 /* MainViewController.swift */; };
+		20186E0927108D48005DB0B1 /* ShowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20186E0827108D48005DB0B1 /* ShowerViewController.swift */; };
+		201974CE269C6D52007EA92B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201974CD269C6D52007EA92B /* AppDelegate.swift */; };
+		201974D0269C6D52007EA92B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201974CF269C6D52007EA92B /* SceneDelegate.swift */; };
+		201974D7269C6D56007EA92B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201974D6269C6D56007EA92B /* Assets.xcassets */; };
+		201974DA269C6D56007EA92B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201974D8269C6D56007EA92B /* LaunchScreen.storyboard */; };
+		201974E5269C6D57007EA92B /* ShoweringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201974E4269C6D57007EA92B /* ShoweringTests.swift */; };
+		201974F0269C6D57007EA92B /* ShoweringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201974EF269C6D57007EA92B /* ShoweringUITests.swift */; };
+		20197504269CCAFC007EA92B /* BathroomSoundClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 20197503269CCAFC007EA92B /* BathroomSoundClassifier.mlmodel */; };
+		20197518269F28BB007EA92B /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019750D269F28B1007EA92B /* UIBezierPathExtension.swift */; };
+		20197519269F28BB007EA92B /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019750E269F28B2007EA92B /* BasicBarChart.swift */; };
+		2019751A269F28BB007EA92B /* BeautifulBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019750F269F28B3007EA92B /* BeautifulBarChartPresenter.swift */; };
+		2019751B269F28BB007EA92B /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197510269F28B4007EA92B /* ArrayExtension.swift */; };
+		2019751C269F28BB007EA92B /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197511269F28B5007EA92B /* BasicBarChartPresenter.swift */; };
+		2019751D269F28BB007EA92B /* BeautifulBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197512269F28B6007EA92B /* BeautifulBarEntry.swift */; };
+		2019751E269F28BB007EA92B /* BeautifulBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197513269F28B7007EA92B /* BeautifulBarChart.swift */; };
+		2019751F269F28BB007EA92B /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197514269F28B8007EA92B /* BasicBarEntry.swift */; };
+		20197520269F28BB007EA92B /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197515269F28B9007EA92B /* CALayerExtension.swift */; };
+		20197521269F28BB007EA92B /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197516269F28BA007EA92B /* CustomSegments.swift */; };
+		20197522269F28BB007EA92B /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197517269F28BB007EA92B /* DataEntry.swift */; };
+		2019753C269F626D007EA92B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019753B269F626D007EA92B /* Constants.swift */; };
+		2019754026A07678007EA92B /* Weekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019753F26A07678007EA92B /* Weekdays.swift */; };
+		2019754226A078F7007EA92B /* ShowerToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754126A078F7007EA92B /* ShowerToDictionary.swift */; };
+		2019754426A0E4B6007EA92B /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754326A0E4B6007EA92B /* LinearProgressView.swift */; };
+		2019754826A18719007EA92B /* BathroomSoundAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754726A18719007EA92B /* BathroomSoundAnalyzer.swift */; };
+		2019754A26A18811007EA92B /* ResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754926A18811007EA92B /* ResultsObserver.swift */; };
+		2042F6F326AC9938008D0B56 /* notification.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2042F6F226AC9938008D0B56 /* notification.wav */; };
+		2077263D272EC62E003B445F /* WaterStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077263C272EC62E003B445F /* WaterStatistic.swift */; };
+		208D5C3927246A41006DAC3F /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208D5C3827246A41006DAC3F /* UIColor+CustomColors.swift */; };
+		2096AEE626DFA5A10014DD0D /* GuidePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2096AEE526DFA5A10014DD0D /* GuidePages.swift */; };
+		20FD43952712FEF9008798FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD43942712FEF9008798FC /* SettingsViewController.swift */; };
+		20FD439727130D6F008798FC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD439627130D6F008798FC /* AboutViewController.swift */; };
+		20FD4399271310E1008798FC /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 20FD4398271310E0008798FC /* about.html */; };
+		8F4860AEDF637E7DD55664C3 /* Pods_Showering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3A8E7714885CCC5725B062 /* Pods_Showering.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		201974E1269C6D57007EA92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201974C2269C6D52007EA92B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201974C9269C6D52007EA92B;
+			remoteInfo = Showering;
+		};
+		201974EC269C6D57007EA92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201974C2269C6D52007EA92B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201974C9269C6D52007EA92B;
+			remoteInfo = Showering;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B3A8E7714885CCC5725B062 /* Pods_Showering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Showering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20186E062710677A005DB0B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		20186E0827108D48005DB0B1 /* ShowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowerViewController.swift; sourceTree = "<group>"; };
+		201974CA269C6D52007EA92B /* Showering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		201974CD269C6D52007EA92B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		201974CF269C6D52007EA92B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		201974D6269C6D56007EA92B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		201974D9269C6D56007EA92B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		201974DB269C6D56007EA92B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201974E0269C6D57007EA92B /* ShoweringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoweringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201974E4269C6D57007EA92B /* ShoweringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoweringTests.swift; sourceTree = "<group>"; };
+		201974E6269C6D57007EA92B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201974EB269C6D57007EA92B /* ShoweringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoweringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201974EF269C6D57007EA92B /* ShoweringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoweringUITests.swift; sourceTree = "<group>"; };
+		201974F1269C6D57007EA92B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20197503269CCAFC007EA92B /* BathroomSoundClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BathroomSoundClassifier.mlmodel; sourceTree = "<group>"; };
+		2019750D269F28B1007EA92B /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		2019750E269F28B2007EA92B /* BasicBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		2019750F269F28B3007EA92B /* BeautifulBarChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautifulBarChartPresenter.swift; sourceTree = "<group>"; };
+		20197510269F28B4007EA92B /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		20197511269F28B5007EA92B /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarChartPresenter.swift; sourceTree = "<group>"; };
+		20197512269F28B6007EA92B /* BeautifulBarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautifulBarEntry.swift; sourceTree = "<group>"; };
+		20197513269F28B7007EA92B /* BeautifulBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautifulBarChart.swift; sourceTree = "<group>"; };
+		20197514269F28B8007EA92B /* BasicBarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarEntry.swift; sourceTree = "<group>"; };
+		20197515269F28B9007EA92B /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		20197516269F28BA007EA92B /* CustomSegments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
+		20197517269F28BB007EA92B /* DataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
+		2019753B269F626D007EA92B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2019753F26A07678007EA92B /* Weekdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekdays.swift; sourceTree = "<group>"; };
+		2019754126A078F7007EA92B /* ShowerToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowerToDictionary.swift; sourceTree = "<group>"; };
+		2019754326A0E4B6007EA92B /* LinearProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
+		2019754726A18719007EA92B /* BathroomSoundAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomSoundAnalyzer.swift; sourceTree = "<group>"; };
+		2019754926A18811007EA92B /* ResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsObserver.swift; sourceTree = "<group>"; };
+		2042F6F226AC9938008D0B56 /* notification.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification.wav; sourceTree = "<group>"; };
+		2077263C272EC62E003B445F /* WaterStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterStatistic.swift; sourceTree = "<group>"; };
+		208D5C3827246A41006DAC3F /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
+		2096AEE526DFA5A10014DD0D /* GuidePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePages.swift; sourceTree = "<group>"; };
+		20FD43942712FEF9008798FC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		20FD439627130D6F008798FC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		20FD4398271310E0008798FC /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		25C017ABD545392EC71438C3 /* Pods-Showering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showering.debug.xcconfig"; path = "Target Support Files/Pods-Showering/Pods-Showering.debug.xcconfig"; sourceTree = "<group>"; };
+		4720BFFD94C19E46CD8BD2D6 /* Pods-Showering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Showering.release.xcconfig"; path = "Target Support Files/Pods-Showering/Pods-Showering.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201974C7269C6D52007EA92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4860AEDF637E7DD55664C3 /* Pods_Showering.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201974DD269C6D57007EA92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201974E8269C6D57007EA92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201974C1269C6D52007EA92B = {
+			isa = PBXGroup;
+			children = (
+				201974CC269C6D52007EA92B /* Showering */,
+				201974E3269C6D57007EA92B /* ShoweringTests */,
+				201974EE269C6D57007EA92B /* ShoweringUITests */,
+				201974CB269C6D52007EA92B /* Products */,
+				F4797719F94949490D545E07 /* Pods */,
+				95A8186BA6693D00850FD20D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		201974CB269C6D52007EA92B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				201974CA269C6D52007EA92B /* Showering.app */,
+				201974E0269C6D57007EA92B /* ShoweringTests.xctest */,
+				201974EB269C6D57007EA92B /* ShoweringUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		201974CC269C6D52007EA92B /* Showering */ = {
+			isa = PBXGroup;
+			children = (
+				2019754626A186F8007EA92B /* Sound Analysis */,
+				2077263F2730A1D2003B445F /* Application */,
+				2077263E2730A012003B445F /* Utilities */,
+				208D5C3A27246B1F006DAC3F /* Scenes */,
+				2019754F26A1DE0E007EA92B /* View */,
+				20197526269F3928007EA92B /* Model */,
+				201974D6269C6D56007EA92B /* Assets.xcassets */,
+				201974DB269C6D56007EA92B /* Info.plist */,
+				2042F6F226AC9938008D0B56 /* notification.wav */,
+			);
+			path = Showering;
+			sourceTree = "<group>";
+		};
+		201974E3269C6D57007EA92B /* ShoweringTests */ = {
+			isa = PBXGroup;
+			children = (
+				201974E4269C6D57007EA92B /* ShoweringTests.swift */,
+				201974E6269C6D57007EA92B /* Info.plist */,
+			);
+			path = ShoweringTests;
+			sourceTree = "<group>";
+		};
+		201974EE269C6D57007EA92B /* ShoweringUITests */ = {
+			isa = PBXGroup;
+			children = (
+				201974EF269C6D57007EA92B /* ShoweringUITests.swift */,
+				201974F1269C6D57007EA92B /* Info.plist */,
+			);
+			path = ShoweringUITests;
+			sourceTree = "<group>";
+		};
+		20197506269E41E1007EA92B /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				20197503269CCAFC007EA92B /* BathroomSoundClassifier.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		2019750C269F289A007EA92B /* Bar Charts */ = {
+			isa = PBXGroup;
+			children = (
+				20197510269F28B4007EA92B /* ArrayExtension.swift */,
+				2019750E269F28B2007EA92B /* BasicBarChart.swift */,
+				20197511269F28B5007EA92B /* BasicBarChartPresenter.swift */,
+				20197514269F28B8007EA92B /* BasicBarEntry.swift */,
+				20197513269F28B7007EA92B /* BeautifulBarChart.swift */,
+				2019750F269F28B3007EA92B /* BeautifulBarChartPresenter.swift */,
+				20197512269F28B6007EA92B /* BeautifulBarEntry.swift */,
+				20197515269F28B9007EA92B /* CALayerExtension.swift */,
+				20197516269F28BA007EA92B /* CustomSegments.swift */,
+				20197517269F28BB007EA92B /* DataEntry.swift */,
+				2019750D269F28B1007EA92B /* UIBezierPathExtension.swift */,
+			);
+			path = "Bar Charts";
+			sourceTree = "<group>";
+		};
+		20197526269F3928007EA92B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20197506269E41E1007EA92B /* ML Model */,
+				2019753F26A07678007EA92B /* Weekdays.swift */,
+				2096AEE526DFA5A10014DD0D /* GuidePages.swift */,
+				2077263C272EC62E003B445F /* WaterStatistic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2019754626A186F8007EA92B /* Sound Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				2019754726A18719007EA92B /* BathroomSoundAnalyzer.swift */,
+				2019754926A18811007EA92B /* ResultsObserver.swift */,
+			);
+			path = "Sound Analysis";
+			sourceTree = "<group>";
+		};
+		2019754F26A1DE0E007EA92B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20FD4398271310E0008798FC /* about.html */,
+				2019755126A1DEB6007EA92B /* Linear Progress View */,
+				2019750C269F289A007EA92B /* Bar Charts */,
+				201974D8269C6D56007EA92B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2019755126A1DEB6007EA92B /* Linear Progress View */ = {
+			isa = PBXGroup;
+			children = (
+				2019754326A0E4B6007EA92B /* LinearProgressView.swift */,
+			);
+			path = "Linear Progress View";
+			sourceTree = "<group>";
+		};
+		2077263E2730A012003B445F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2019754126A078F7007EA92B /* ShowerToDictionary.swift */,
+				2019753B269F626D007EA92B /* Constants.swift */,
+				208D5C3827246A41006DAC3F /* UIColor+CustomColors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2077263F2730A1D2003B445F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				201974CD269C6D52007EA92B /* AppDelegate.swift */,
+				201974CF269C6D52007EA92B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		208D5C3A27246B1F006DAC3F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				208D5C3E27246B63006DAC3F /* Settings */,
+				208D5C3D27246B59006DAC3F /* Shower */,
+				208D5C3C27246B46006DAC3F /* Main */,
+				208D5C3B27246B27006DAC3F /* About */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		208D5C3B27246B27006DAC3F /* About */ = {
+			isa = PBXGroup;
+			children = (
+				20FD439627130D6F008798FC /* AboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		208D5C3C27246B46006DAC3F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				20186E062710677A005DB0B1 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		208D5C3D27246B59006DAC3F /* Shower */ = {
+			isa = PBXGroup;
+			children = (
+				20186E0827108D48005DB0B1 /* ShowerViewController.swift */,
+			);
+			path = Shower;
+			sourceTree = "<group>";
+		};
+		208D5C3E27246B63006DAC3F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				20FD43942712FEF9008798FC /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		95A8186BA6693D00850FD20D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A8E7714885CCC5725B062 /* Pods_Showering.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4797719F94949490D545E07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25C017ABD545392EC71438C3 /* Pods-Showering.debug.xcconfig */,
+				4720BFFD94C19E46CD8BD2D6 /* Pods-Showering.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		201974C9269C6D52007EA92B /* Showering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201974F4269C6D57007EA92B /* Build configuration list for PBXNativeTarget "Showering" */;
+			buildPhases = (
+				4D27DAB2FDB511EB23BBE57E /* [CP] Check Pods Manifest.lock */,
+				201974C6269C6D52007EA92B /* Sources */,
+				201974C7269C6D52007EA92B /* Frameworks */,
+				201974C8269C6D52007EA92B /* Resources */,
+				AAF840F8E4EBEAAE38941574 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Showering;
+			productName = Showering;
+			productReference = 201974CA269C6D52007EA92B /* Showering.app */;
+			productType = "com.apple.product-type.application";
+		};
+		201974DF269C6D57007EA92B /* ShoweringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201974F7269C6D57007EA92B /* Build configuration list for PBXNativeTarget "ShoweringTests" */;
+			buildPhases = (
+				201974DC269C6D57007EA92B /* Sources */,
+				201974DD269C6D57007EA92B /* Frameworks */,
+				201974DE269C6D57007EA92B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201974E2269C6D57007EA92B /* PBXTargetDependency */,
+			);
+			name = ShoweringTests;
+			productName = ShoweringTests;
+			productReference = 201974E0269C6D57007EA92B /* ShoweringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		201974EA269C6D57007EA92B /* ShoweringUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201974FA269C6D57007EA92B /* Build configuration list for PBXNativeTarget "ShoweringUITests" */;
+			buildPhases = (
+				201974E7269C6D57007EA92B /* Sources */,
+				201974E8269C6D57007EA92B /* Frameworks */,
+				201974E9269C6D57007EA92B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201974ED269C6D57007EA92B /* PBXTargetDependency */,
+			);
+			name = ShoweringUITests;
+			productName = ShoweringUITests;
+			productReference = 201974EB269C6D57007EA92B /* ShoweringUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		201974C2269C6D52007EA92B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					201974C9269C6D52007EA92B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					201974DF269C6D57007EA92B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 201974C9269C6D52007EA92B;
+					};
+					201974EA269C6D57007EA92B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 201974C9269C6D52007EA92B;
+					};
+				};
+			};
+			buildConfigurationList = 201974C5269C6D52007EA92B /* Build configuration list for PBXProject "Showering" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 201974C1269C6D52007EA92B;
+			productRefGroup = 201974CB269C6D52007EA92B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201974C9269C6D52007EA92B /* Showering */,
+				201974DF269C6D57007EA92B /* ShoweringTests */,
+				201974EA269C6D57007EA92B /* ShoweringUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		201974C8269C6D52007EA92B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201974DA269C6D56007EA92B /* LaunchScreen.storyboard in Resources */,
+				201974D7269C6D56007EA92B /* Assets.xcassets in Resources */,
+				20FD4399271310E1008798FC /* about.html in Resources */,
+				2042F6F326AC9938008D0B56 /* notification.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201974DE269C6D57007EA92B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201974E9269C6D57007EA92B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D27DAB2FDB511EB23BBE57E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Showering-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF840F8E4EBEAAE38941574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Showering/Pods-Showering-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Showering/Pods-Showering-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Showering/Pods-Showering-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201974C6269C6D52007EA92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20197504269CCAFC007EA92B /* BathroomSoundClassifier.mlmodel in Sources */,
+				2096AEE626DFA5A10014DD0D /* GuidePages.swift in Sources */,
+				208D5C3927246A41006DAC3F /* UIColor+CustomColors.swift in Sources */,
+				2019754226A078F7007EA92B /* ShowerToDictionary.swift in Sources */,
+				20FD43952712FEF9008798FC /* SettingsViewController.swift in Sources */,
+				2019751D269F28BB007EA92B /* BeautifulBarEntry.swift in Sources */,
+				201974CE269C6D52007EA92B /* AppDelegate.swift in Sources */,
+				2019751F269F28BB007EA92B /* BasicBarEntry.swift in Sources */,
+				2019754426A0E4B6007EA92B /* LinearProgressView.swift in Sources */,
+				2019753C269F626D007EA92B /* Constants.swift in Sources */,
+				20186E072710677A005DB0B1 /* MainViewController.swift in Sources */,
+				20197520269F28BB007EA92B /* CALayerExtension.swift in Sources */,
+				2077263D272EC62E003B445F /* WaterStatistic.swift in Sources */,
+				20197522269F28BB007EA92B /* DataEntry.swift in Sources */,
+				2019751B269F28BB007EA92B /* ArrayExtension.swift in Sources */,
+				20197521269F28BB007EA92B /* CustomSegments.swift in Sources */,
+				20197518269F28BB007EA92B /* UIBezierPathExtension.swift in Sources */,
+				201974D0269C6D52007EA92B /* SceneDelegate.swift in Sources */,
+				20186E0927108D48005DB0B1 /* ShowerViewController.swift in Sources */,
+				2019754026A07678007EA92B /* Weekdays.swift in Sources */,
+				20FD439727130D6F008798FC /* AboutViewController.swift in Sources */,
+				2019754A26A18811007EA92B /* ResultsObserver.swift in Sources */,
+				2019751A269F28BB007EA92B /* BeautifulBarChartPresenter.swift in Sources */,
+				2019751C269F28BB007EA92B /* BasicBarChartPresenter.swift in Sources */,
+				2019754826A18719007EA92B /* BathroomSoundAnalyzer.swift in Sources */,
+				2019751E269F28BB007EA92B /* BeautifulBarChart.swift in Sources */,
+				20197519269F28BB007EA92B /* BasicBarChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201974DC269C6D57007EA92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201974E5269C6D57007EA92B /* ShoweringTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201974E7269C6D57007EA92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201974F0269C6D57007EA92B /* ShoweringUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		201974E2269C6D57007EA92B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201974C9269C6D52007EA92B /* Showering */;
+			targetProxy = 201974E1269C6D57007EA92B /* PBXContainerItemProxy */;
+		};
+		201974ED269C6D57007EA92B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201974C9269C6D52007EA92B /* Showering */;
+			targetProxy = 201974EC269C6D57007EA92B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		201974D8269C6D56007EA92B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201974D9269C6D56007EA92B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		201974F2269C6D57007EA92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		201974F3269C6D57007EA92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201974F5269C6D57007EA92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C017ABD545392EC71438C3 /* Pods-Showering.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 5238GJ38UR;
+				INFOPLIST_FILE = Showering/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvl.h2save;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		201974F6269C6D57007EA92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4720BFFD94C19E46CD8BD2D6 /* Pods-Showering.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 5238GJ38UR;
+				INFOPLIST_FILE = Showering/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvl.h2save;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		201974F8269C6D57007EA92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5238GJ38UR;
+				INFOPLIST_FILE = ShoweringTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvl.ShoweringTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Showering.app/Showering";
+			};
+			name = Debug;
+		};
+		201974F9269C6D57007EA92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5238GJ38UR;
+				INFOPLIST_FILE = ShoweringTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvl.ShoweringTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Showering.app/Showering";
+			};
+			name = Release;
+		};
+		201974FB269C6D57007EA92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5238GJ38UR;
+				INFOPLIST_FILE = ShoweringUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvl.ShoweringUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Showering;
+			};
+			name = Debug;
+		};
+		201974FC269C6D57007EA92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5238GJ38UR;
+				INFOPLIST_FILE = ShoweringUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinvl.ShoweringUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Showering;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201974C5269C6D52007EA92B /* Build configuration list for PBXProject "Showering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201974F2269C6D57007EA92B /* Debug */,
+				201974F3269C6D57007EA92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201974F4269C6D57007EA92B /* Build configuration list for PBXNativeTarget "Showering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201974F5269C6D57007EA92B /* Debug */,
+				201974F6269C6D57007EA92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201974F7269C6D57007EA92B /* Build configuration list for PBXNativeTarget "ShoweringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201974F8269C6D57007EA92B /* Debug */,
+				201974F9269C6D57007EA92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201974FA269C6D57007EA92B /* Build configuration list for PBXNativeTarget "ShoweringUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201974FB269C6D57007EA92B /* Debug */,
+				201974FC269C6D57007EA92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 201974C2269C6D52007EA92B /* Project object */;
+}
