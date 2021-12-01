@@ -28,20 +28,19 @@ class ShowerViewController: UIViewController {
     }
     
     deinit {
-        print("shower deinited")
         soundAnalyzer = nil
         countdownLabel.delegate = nil
         audioPlayer = nil
     }
     
     // MARK: - View controller dismission
-    @objc func goBack() {
+    @objc private func goBack() {
         self.dismiss(animated: true, completion: nil)
         soundAnalyzer!.stopAudioEngine()
     }
     
     // MARK: - Views
-    lazy var backgroundImageView: UIImageView = {
+    private lazy var backgroundImageView: UIImageView = {
         let imageview = UIImageView()
         imageview.image = UIImage(named: "wave")
         imageview.contentMode = .scaleAspectFill
@@ -49,7 +48,7 @@ class ShowerViewController: UIViewController {
         return imageview
     }()
     
-    lazy var startShowerButton: UIButton = {
+    private lazy var startShowerButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("START", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
@@ -61,7 +60,7 @@ class ShowerViewController: UIViewController {
         return button
     }()
     
-    lazy var goBackButton: UIButton = {
+    private lazy var goBackButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Go back", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
@@ -73,7 +72,7 @@ class ShowerViewController: UIViewController {
         return button
     }()
     
-    lazy var showerButtonsStackView: UIStackView = {
+    private lazy var showerButtonsStackView: UIStackView = {
         let stackview = UIStackView(arrangedSubviews: [startShowerButton, goBackButton])
         stackview.axis = .vertical
         stackview.spacing = 5
@@ -82,7 +81,7 @@ class ShowerViewController: UIViewController {
         return stackview
     }()
     
-    lazy var countdownLabel: CountdownLabel = {
+    private lazy var countdownLabel: CountdownLabel = {
         let label = CountdownLabel()
         label.text = "05: 00"
         label.textColor = .black
@@ -96,7 +95,7 @@ class ShowerViewController: UIViewController {
         return label
     }()
     
-    lazy var showerProgressView: LinearProgressView = {
+    private lazy var showerProgressView: LinearProgressView = {
         let progressView = LinearProgressView()
         progressView.barColor = UIColor.H2Save.ashenGray
         progressView.trackColor = UIColor.H2Save.accentColor
@@ -109,7 +108,7 @@ class ShowerViewController: UIViewController {
         return progressView
     }()
     
-    lazy var recognitionBackground: UIView = {
+    private lazy var recognitionBackground: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.H2Save.accentColor
         view.layer.masksToBounds = true
@@ -118,7 +117,7 @@ class ShowerViewController: UIViewController {
         return view
     }()
     
-    lazy var recognitionImage: UIImageView = {
+    private lazy var recognitionImage: UIImageView = {
         let imageview = UIImageView()
         let image = UIImage(named: "startW")
         imageview.image = image
@@ -207,7 +206,7 @@ class ShowerViewController: UIViewController {
     private var classificationTimeNotRecognized: Int = 0
     private var classificationTimeFound: Int = 0
     
-    func timerServiceNotRecognized() {
+    private func timerServiceNotRecognized() {
         if classificationTimeNotRecognized >= 5 {
             switch countdownLabel.isPaused {
             case true:
@@ -221,7 +220,7 @@ class ShowerViewController: UIViewController {
         classificationTimeNotRecognized += 1
     }
     
-    func timerServiceFound() {
+    private func timerServiceFound() {
         if classificationTimeFound >= 5 {
             switch countdownLabel.isPaused {
             case true:
@@ -238,7 +237,7 @@ class ShowerViewController: UIViewController {
 
 // MARK: - Shower related methods
 extension ShowerViewController {
-    @objc func startShower() {
+    @objc private func startShower() {
         guard let soundAnalyzer = soundAnalyzer else { return }
         
         if shouldStopShower == true {
@@ -296,7 +295,6 @@ extension ShowerViewController {
 // MARK: - Bathroom classifier delegate
 extension ShowerViewController: BathroomClassifierDelegate {
     func displayPredictionResult(identifier: String, confidence: Double) {
-        print(identifier, confidence)
         switch shouldLowerAccuracy {
         case true:
             DispatchQueue.main.async {
@@ -340,7 +338,6 @@ extension ShowerViewController: BathroomClassifierDelegate {
 // MARK: - Countdown label delegate
 extension ShowerViewController: CountdownLabelDelegate {
     func countingAt(timeCounted: TimeInterval, timeRemaining: TimeInterval) {
-        print("counting timeCounted:", timeCounted, " and remaining", timeRemaining)
         showerProgressView.setProgress(Float(timeRemaining), animated: true)
         switch timeRemaining {
         case 45:

@@ -29,7 +29,7 @@
 		20197522269F28BB007EA92B /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20197517269F28BB007EA92B /* DataEntry.swift */; };
 		2019753C269F626D007EA92B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019753B269F626D007EA92B /* Constants.swift */; };
 		2019754026A07678007EA92B /* Weekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019753F26A07678007EA92B /* Weekdays.swift */; };
-		2019754226A078F7007EA92B /* ShowerToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754126A078F7007EA92B /* ShowerToDictionary.swift */; };
+		2019754226A078F7007EA92B /* ShowerDictionarySaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754126A078F7007EA92B /* ShowerDictionarySaver.swift */; };
 		2019754426A0E4B6007EA92B /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754326A0E4B6007EA92B /* LinearProgressView.swift */; };
 		2019754826A18719007EA92B /* BathroomSoundAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754726A18719007EA92B /* BathroomSoundAnalyzer.swift */; };
 		2019754A26A18811007EA92B /* ResultsObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019754926A18811007EA92B /* ResultsObserver.swift */; };
@@ -90,7 +90,7 @@
 		20197517269F28BB007EA92B /* DataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
 		2019753B269F626D007EA92B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2019753F26A07678007EA92B /* Weekdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekdays.swift; sourceTree = "<group>"; };
-		2019754126A078F7007EA92B /* ShowerToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowerToDictionary.swift; sourceTree = "<group>"; };
+		2019754126A078F7007EA92B /* ShowerDictionarySaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowerDictionarySaver.swift; sourceTree = "<group>"; };
 		2019754326A0E4B6007EA92B /* LinearProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
 		2019754726A18719007EA92B /* BathroomSoundAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomSoundAnalyzer.swift; sourceTree = "<group>"; };
 		2019754926A18811007EA92B /* ResultsObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsObserver.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 		2077263E2730A012003B445F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2019754126A078F7007EA92B /* ShowerToDictionary.swift */,
+				2019754126A078F7007EA92B /* ShowerDictionarySaver.swift */,
 				2019753B269F626D007EA92B /* Constants.swift */,
 				208D5C3827246A41006DAC3F /* UIColor+CustomColors.swift */,
 			);
@@ -509,7 +509,7 @@
 				20197504269CCAFC007EA92B /* BathroomSoundClassifier.mlmodel in Sources */,
 				2096AEE626DFA5A10014DD0D /* GuidePages.swift in Sources */,
 				208D5C3927246A41006DAC3F /* UIColor+CustomColors.swift in Sources */,
-				2019754226A078F7007EA92B /* ShowerToDictionary.swift in Sources */,
+				2019754226A078F7007EA92B /* ShowerDictionarySaver.swift in Sources */,
 				20FD43952712FEF9008798FC /* SettingsViewController.swift in Sources */,
 				2019751D269F28BB007EA92B /* BeautifulBarEntry.swift in Sources */,
 				201974CE269C6D52007EA92B /* AppDelegate.swift in Sources */,

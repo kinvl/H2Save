@@ -57,7 +57,7 @@ class SettingsViewController: UIViewController {
     }
     
     // MARK: - Views
-    lazy var backgroundImageView: UIImageView = {
+    private lazy var backgroundImageView: UIImageView = {
         let imageview = UIImageView()
         imageview.image = UIImage(named: "wave")
         imageview.contentMode = .scaleAspectFill
@@ -65,7 +65,7 @@ class SettingsViewController: UIViewController {
         return imageview
     }()
     
-    lazy var aboutButton: UIButton = {
+    private lazy var aboutButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("About", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
@@ -77,7 +77,7 @@ class SettingsViewController: UIViewController {
         return button
     }()
     
-    lazy var goBackButton: UIButton = {
+    private lazy var goBackButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Go back", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
@@ -89,7 +89,7 @@ class SettingsViewController: UIViewController {
         return button
     }()
     
-    lazy var buttonsStackView: UIStackView = {
+    private lazy var buttonsStackView: UIStackView = {
         let stackview = UIStackView(arrangedSubviews: [aboutButton, goBackButton])
         stackview.axis = .vertical
         stackview.spacing = 5
@@ -98,14 +98,14 @@ class SettingsViewController: UIViewController {
         return stackview
     }()
     
-    lazy var showerFixSwitch: UISwitch = {
+    private lazy var showerFixSwitch: UISwitch = {
         let uiswitch = UISwitch()
         uiswitch.addTarget(self, action: #selector(writeShowerFixSettingsToUserDefaults), for: .valueChanged)
         
         return uiswitch
     }()
     
-    lazy var resetChartDataButton: UIButton = {
+    private lazy var resetChartDataButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("RESET CHART DATA", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
@@ -117,7 +117,7 @@ class SettingsViewController: UIViewController {
         return button
     }()
     
-    lazy var resetWaterStatisticsButton: UIButton = {
+    private lazy var resetWaterStatisticsButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("RESET WATER STATISTICS", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
@@ -129,7 +129,7 @@ class SettingsViewController: UIViewController {
         return button
     }()
     
-    lazy var replayGuideButton: UIButton = {
+    private lazy var replayGuideButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("REPLAY GUIDE", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
@@ -141,7 +141,7 @@ class SettingsViewController: UIViewController {
         return button
     }()
     
-    lazy var upperButtonsStackView: UIStackView = {
+    private lazy var upperButtonsStackView: UIStackView = {
         let stackview = UIStackView(arrangedSubviews: [resetChartDataButton, resetWaterStatisticsButton, replayGuideButton])
         stackview.axis = .vertical
         stackview.spacing = 8
@@ -150,7 +150,7 @@ class SettingsViewController: UIViewController {
         return stackview
     }()
     
-    lazy var showerFixLabel: UILabel = {
+    private lazy var showerFixLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         label.text = "Shower not recognized fix"
@@ -159,7 +159,7 @@ class SettingsViewController: UIViewController {
         return label
     }()
     
-    lazy var showerFixDescriptionLabel: UILabel = {
+    private lazy var showerFixDescriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.text = """
@@ -171,7 +171,7 @@ class SettingsViewController: UIViewController {
         return label
     }()
     
-    lazy var showerFixInnerStackView: UIStackView = {
+    private lazy var showerFixInnerStackView: UIStackView = {
         let stackview = UIStackView(arrangedSubviews: [showerFixLabel, showerFixDescriptionLabel])
         stackview.axis = .vertical
         stackview.spacing = 8
@@ -181,7 +181,7 @@ class SettingsViewController: UIViewController {
         return stackview
     }()
     
-    lazy var showerFixOuterStackView: UIStackView = {
+    private lazy var showerFixOuterStackView: UIStackView = {
         let stackview = UIStackView(arrangedSubviews: [showerFixInnerStackView, showerFixSwitch])
         stackview.axis = .horizontal
         stackview.alignment = .center

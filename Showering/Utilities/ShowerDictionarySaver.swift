@@ -1,5 +1,5 @@
 //
-//  ShowerToArray.swift
+//  ShowerDictionarySaver.swift
 //  Showering
 //
 //  Created by Krzysztof Kinal on 15/07/2021.

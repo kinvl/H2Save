@@ -10,12 +10,12 @@ import SoundAnalysis
 class BathroomSoundAnalyzer {
     
     var audioEngine: AVAudioEngine?
-    var soundClassifier: BathroomSoundClassifier?
+    private var soundClassifier: BathroomSoundClassifier?
     
     var inputFormat: AVAudioFormat!
     var analyzer: SNAudioStreamAnalyzer!
     var resultsObserver: ResultsObserver?
-    let analysisQueue = DispatchQueue(label: "com.apple.AnalysisQueue")
+    private let analysisQueue = DispatchQueue(label: "com.apple.AnalysisQueue")
     
     func startAudioEngine() {
         do {
@@ -49,6 +49,4 @@ class BathroomSoundAnalyzer {
         soundClassifier = BathroomSoundClassifier()
         resultsObserver = ResultsObserver()
     }
-    
-    
 }

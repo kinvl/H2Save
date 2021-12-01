@@ -50,7 +50,7 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - Views
-    lazy var backgroundImageView: UIImageView = {
+    private lazy var backgroundImageView: UIImageView = {
         let imageview = UIImageView()
         imageview.image = UIImage(named: "wave")
         imageview.contentMode = .scaleAspectFill
@@ -58,7 +58,7 @@ class MainViewController: UIViewController {
         return imageview
     }()
     
-    lazy var startButton: UIButton = {
+    private lazy var startButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Start shower", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
@@ -70,7 +70,7 @@ class MainViewController: UIViewController {
         return button
     }()
     
-    lazy var settingsButton: UIButton = {
+    private lazy var settingsButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Settings", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -82,7 +82,7 @@ class MainViewController: UIViewController {
         return button
     }()
     
-    lazy var buttonsStackView: UIStackView = {
+    private lazy var buttonsStackView: UIStackView = {
         let stackview = UIStackView(arrangedSubviews: [startButton, settingsButton])
         stackview.axis = .vertical
         stackview.spacing = 5
@@ -91,14 +91,14 @@ class MainViewController: UIViewController {
         return stackview
     }()
     
-    lazy var chartBackgroundView: UIView = {
+    private lazy var chartBackgroundView: UIView = {
         let view = UIView()
         view.backgroundColor = .clear
         
         return view
     }()
     
-    lazy var beautifulBarChart: BeautifulBarChart = {
+    private lazy var beautifulBarChart: BeautifulBarChart = {
         let barChart = BeautifulBarChart()
         barChart.backgroundColor = .white
         barChart.layer.cornerRadius = 12.69
@@ -106,7 +106,7 @@ class MainViewController: UIViewController {
         return barChart
     }()
     
-    lazy var barChartNoDataLabel: UILabel = {
+    private lazy var barChartNoDataLabel: UILabel = {
         let label = UILabel()
         label.text = "No shower data yet"
         label.textColor = .black
@@ -115,21 +115,21 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    lazy var labelShimmer: ShimmeringView = {
+    private lazy var labelShimmer: ShimmeringView = {
         let shimmer = ShimmeringView()
         
         
         return shimmer
     }()
     
-    lazy var separatorView: UIProgressView = {
+    private lazy var separatorView: UIProgressView = {
         let progressView = UIProgressView()
         progressView.progress = 0
         
         return progressView
     }()
     
-    lazy var waterStackViewsStackView: UIStackView = {
+    private lazy var waterStackViewsStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 26
@@ -137,7 +137,7 @@ class MainViewController: UIViewController {
         return stackView
     }()
     
-    lazy var waterSavedDecsriptionLabel: UILabel = {
+    private lazy var waterSavedDecsriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Liters of water saved:"
         label.textColor = .white
@@ -146,7 +146,7 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    lazy var waterUsedDecsriptionLabel: UILabel = {
+    private lazy var waterUsedDecsriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Liters of wated used:"
         label.textColor = .white
@@ -155,7 +155,7 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    lazy var waterSavedLabel: UILabel = {
+    private lazy var waterSavedLabel: UILabel = {
         let label = UILabel()
         label.text = waterStatistic(statistic: .saved)
         label.textColor = .white
@@ -164,7 +164,7 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    lazy var waterUsedLabel: UILabel = {
+    private lazy var waterUsedLabel: UILabel = {
         let label = UILabel()
         label.text = waterStatistic(statistic: .used)
         label.textColor = .white
@@ -173,7 +173,7 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    lazy var waterSavedStackView: UIStackView = {
+    private lazy var waterSavedStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.distribution = .equalSpacing
@@ -182,7 +182,8 @@ class MainViewController: UIViewController {
         
         return stackView
     }()
-    lazy var waterUsedStackView: UIStackView = {
+    
+    private lazy var waterUsedStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.distribution = .equalSpacing
@@ -192,7 +193,7 @@ class MainViewController: UIViewController {
         return stackView
     }()
     
-    lazy var upperStackViewBackgroundView: UIView = {
+    private lazy var upperStackViewBackgroundView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.H2Save.accentColor
         view.layer.cornerRadius = 12.69
@@ -200,7 +201,7 @@ class MainViewController: UIViewController {
         return view
     }()
     
-    lazy var upperStackView: UIStackView = {
+    private lazy var upperStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 10
